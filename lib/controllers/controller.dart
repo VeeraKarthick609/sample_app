@@ -18,7 +18,6 @@ class Controller extends GetxController {
     if (items.isEmpty) {
       return 0;
     } else {
-      print(items);
       List? item = items[name];
       return item?[1] ?? 0;
     }
@@ -29,7 +28,6 @@ class Controller extends GetxController {
     items.forEach((key, value) {
       var qty = items[key][1].value as int;
       var price = items[key][0];
-      print((qty * price));
       total = total + (qty * price) as RxDouble;
     });
 
