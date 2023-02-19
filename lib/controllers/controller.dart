@@ -16,7 +16,6 @@ class Controller extends GetxController {
 
   dynamic get_qty(name) {
     if (items.isEmpty) {
-      print('Hey');
       return 0;
     } else {
       print(items);
