@@ -11,7 +11,6 @@ class BottomBar extends StatefulWidget {
 
 class _BottomBarState extends State<BottomBar> {
   bool? value = false;
-  String? payment_option;
   final Controller _c = Get.put(Controller());
   @override
   Widget build(BuildContext context) {
